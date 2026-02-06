@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+$green: #2d5f3f;
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+}
+
+header{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 20px 64px 24px 64px;
+    height: 76px;
+    align-items: center; 
+    overflow: hidden;
+    div{
+     .logo{
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: $green;
+     }
+    }
+
+    .nav{
+        li{
+            margin-right: 42px;
+            font-family: var(--second-family);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: #374151;
+            cursor: pointer;
+
+        }
+        .active{
+            color: #2d6f3e;
+        }
+    }
+
+    .profile{
+        li{
+            margin-right: 24px;
+        }
+    }
+}
