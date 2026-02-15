@@ -1,7 +1,119 @@
 @import "tailwindcss";
 
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+}
+
 main{
     .hero-section{
         background: linear-gradient(135deg, #f5f5dc 0%, #fff 100%);
+        .hero-content{
+            padding-top: 160px;
+            padding-left: 350px;
+            h1{
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 125%;
+                letter-spacing: -0.01em;
+                color: #2d6f3e;
+                max-width: 467px;
+                margin-bottom: 24px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 160%;
+                letter-spacing: -0.03em;
+                color: #4b5563;
+                max-width: 541px;
+                margin-bottom: 31px;
+            }
+            .buttons{
+                .shop-now{
+                    border: 0px solid #e5e7eb;
+                    border-radius: 99999px;
+                    width: 144px;
+                    height: 60px;
+                    margin-right: 16px;
+
+                    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+                    background: #2d6f3e;
+                    transition: transform 0.3s ease;
+                cursor: pointer;
+
+                    &:hover{
+                        transform: translateY(-4px);
+                    }
+                }
+                .learn-more{
+                    border: 2px solid #2d6f3e;
+                    border-radius: 9999px;
+                    width: 157px;
+                    height: 60px;
+                    background: rgba(0, 0, 0, 0);
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+
+                    &:hover{
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }
+        .img-box{
+            padding-left: 115px;
+        }
+    }
+    .category-section{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 111%;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #2d6f3e;
+            margin-bottom: 48px;
+        }
+
+        ul{
+            display: flex;
+            li{
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                border: 0px solid#e5e7eb;
+                border-radius: 24px;
+                width: 304px;
+                height: 256px;
+
+                background: #f5f5dc;
+
+                align-items: center;
+                justify-content: center;
+
+                margin-right: 60px;
+                transition: transform 0.3s ease;
+
+                &:hover{
+                    transform: translateY(-2px);
+                }
+                
+                img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .featured-section{
+        background: #f5f5dc;
+        padding-bottom: 80px;
+
     }
 }
